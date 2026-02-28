@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <title>Menú Principal</title>
+</head>
+<body>
+<div class="menu">
+<h1>Titulo</h1>
+
+<button onclick="location.href='juego.html'">Jugar</button>
+<button onclick="location.href='config.html'">Configuración</button>
+<button onclick="salir()">Salir</button>
+
+<script>
+function salir(){
+document.body.style.background="black";
+document.body.innerHTML="<h1 style='color:white;text-align:center;margin-top:20%'>Juego cerrado</h1>";
+}
+</script>
+</div>
+</body>
+</html>
