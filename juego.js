@@ -37,6 +37,25 @@ camera.lookAt(0,0,0);
 
 });
 
+function cargarModelo(ruta,x=0,y=0,z=0,escala=1){
+
+const loader = new THREE.GLTFLoader();
+
+loader.load(ruta,(gltf)=>{
+
+const modelo = gltf.scene;
+modelo.position.set(x,y,z);
+modelo.scale.setScalar(escala);
+
+scene.add(modelo);
+
+});
+
+}
+
+//cargarModelo("bulbasaur.glb",0,0,0,1);
+//hola mundo
+
 const light = new THREE.DirectionalLight(0xffffff,1);
 light.position.set(3,3,3);
 scene.add(light);
