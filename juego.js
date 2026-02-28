@@ -54,6 +54,7 @@ scene.add(modelo);
 }
 
 //cargarModelo("bulbasaur.glb",0,0,0,1);
+//hola mundo
 
 const light = new THREE.DirectionalLight(0xffffff,1);
 light.position.set(3,3,3);
