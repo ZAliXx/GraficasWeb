@@ -9,7 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
 
-<!-- Socket.io: lo sirve el servidor Node automáticamente -->
+
 <script src="/socket.io/socket.io.js"></script>
 
 <style>
@@ -18,7 +18,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,0.85);
-    border: 2px solid #00ffe7;
+    border: 2px solid #ff9500;
     border-radius: 12px;
     padding: 32px 40px;
     display: flex;
@@ -29,11 +29,11 @@
     font-family: sans-serif;
     min-width: 280px;
   }
-  #panelConexion h2 { margin: 0 0 4px; color: #00ffe7; text-align: center; }
+  #panelConexion h2 { margin: 0 0 4px; color: #ff9500; text-align: center; }
   #idNombreJugador {
     padding: 10px 14px;
     border-radius: 8px;
-    border: 1px solid #00ffe7;
+    border: 1px solid #ff9500;
     background: #111;
     color: #fff;
     font-size: 16px;
@@ -43,7 +43,7 @@
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background: #00ffe7;
+    background: #ff9500;
     color: #000;
     font-size: 16px;
     font-weight: bold;
@@ -62,21 +62,21 @@
     min-width: 150px;
     display: none;
   }
-  #listaJugadores h4 { margin: 0 0 6px; color: #00ffe7; }
+  #listaJugadores h4 { margin: 0 0 6px; color: #ff9500; }
   #listaJugadores ul { margin: 0; padding: 0; list-style: none; }
-  #listaJugadores li.yo { color: #00ffe7; font-weight: bold; }
+  #listaJugadores li.yo { color: #ff9500; font-weight: bold; }
 </style>
 </head>
 <body>
 
-<!-- Panel de conexión multijugador (desaparece al conectar) -->
+
 <div id="panelConexion">
-  <h2>🎮 Multijugador</h2>
+  <h2>Multijugador</h2>
   <input id="idNombreJugador" type="text" placeholder="Tu nombre de jugador" autocomplete="off" />
   <input id="idBoton" type="button" value="Conectar" />
 </div>
 
-<!-- HUD original sin cambios -->
+
 <div class="hud">
   <button onclick="location.href='pausa.html'">⏸</button>
   <span id="score">Puntaje: 0</span>
